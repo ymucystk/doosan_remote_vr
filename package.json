@@ -1,0 +1,33 @@
+{
+  "name": "doosan_remote_vr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev-https": "next dev --turbopack --experimental-https",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ucl-nuee/ik-cd-worker": "^0.2.19",
+    "@ucl-nuee/robot-loader": "^1.0.19",
+    "aframe": "^1.7.1",
+    "mqtt": "^5.14.1",
+    "bootstrap": "^5.3.8",
+    "sora-js-sdk": "^2025.2.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
