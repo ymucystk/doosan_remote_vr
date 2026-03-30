@@ -138,9 +138,9 @@ export default function Home(props) {
           width="0.4" height="0.4" color="green"
           mqtt-sender={`left: #kinova; right: #kinova; appmode: ${props.appmode}`}
           ref={kinova_ref}
-          robot-loader="model: gen2"
+          robot-loader="model: gen3_lite"
 
-          ik-worker={`${0}, ${Math.PI}, ${deg90}, ${0}, ${deg90}, ${0}, ${0}, ${0}`}
+          ik-worker={`${0}, ${deg30}, ${0}, ${0}, ${deg90}, ${0}, ${0}, ${0}`}
           reflect-worker-joints
           arm-motion-ui
           grip-control
