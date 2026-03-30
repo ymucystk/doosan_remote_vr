@@ -1,5 +1,5 @@
-# doosan_remote_vr
-Metawork system for Doosan Robotics A509
+# kinova_remote_vr
+Metawork system for Kinova gen2
 
 pnpm install
 pnpm copy-assets

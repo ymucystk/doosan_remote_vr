@@ -128,7 +128,7 @@ export default function Page() {
             <br />
           </p>
           <p className="note">不明点があれば、スタッフにお知らせください。</p>
-          <a href="/doosan_normal" className="button">
+          <a href="/kinova_normal" className="button">
             実験を始める
           </a>
           　

@@ -63,7 +63,7 @@ export default function Home(props) {
 
   const [rtcStats, set_rtcStats] = React.useState([])
 
-  const doosan_ref = React.useRef(null);
+  const kinova_ref = React.useRef(null);
 
   const right_control = React.useRef(null);
 
@@ -81,7 +81,7 @@ export default function Home(props) {
 
   // MQTT 対応
   React.useEffect(() => {
-    setupMQTT(props, robotIDRef, doosan_ref,set_draw_ready); // useEffect で1回だけ実行される。
+    setupMQTT(props, robotIDRef, kinova_ref,set_draw_ready); // useEffect で1回だけ実行される。
 
 
   }, []);
@@ -111,7 +111,7 @@ export default function Home(props) {
           ref={right_control}
           laser-controls="hand: right"
           thumbstick-menu="items: ray; laser: false"
-          target-selector="id: doosan"
+          target-selector="id: kinova"
           event-distributor
           visible="false">
           <a-entity a-axes-frame="length: 0.1" />
@@ -133,14 +133,14 @@ export default function Home(props) {
         }
 
 
-        <a-plane id="doosan"
+        <a-plane id="kinova"
           position="0.0 0.8 -2.0" rotation="-90 0 0"
           width="0.4" height="0.4" color="green"
-          mqtt-sender={`left: #doosan; right: #doosan; appmode: ${props.appmode}`}
-          ref={doosan_ref}
-          robot-loader="model: a0509"
+          mqtt-sender={`left: #kinova; right: #kinova; appmode: ${props.appmode}`}
+          ref={kinova_ref}
+          robot-loader="model: gen2"
 
-          ik-worker={`${0}, ${deg22}, ${deg67}, ${0}, ${deg90}, ${0}`}
+          ik-worker={`${0}, ${Math.PI}, ${deg90}, ${0}, ${deg90}, ${0}, ${0}, ${0}`}
           reflect-worker-joints
           arm-motion-ui
           grip-control

@@ -1,5 +1,5 @@
 {
-  "name": "doosan_remote_vr",
+  "name": "kinova_remote_vr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@ucl-nuee/ik-cd-worker": "^0.2.19",
-    "@ucl-nuee/robot-loader": "^1.0.19",
+    "@ucl-nuee/ik-cd-worker": "^0.4.8",
+    "@ucl-nuee/robot-loader": "1.1.4",
     "aframe": "^1.7.1",
     "mqtt": "^5.14.1",
     "bootstrap": "^5.3.8",
