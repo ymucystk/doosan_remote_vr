@@ -84,29 +84,5 @@
         "origin": {"$": {"rpy": [1.5707963267948966, 0, 0], "xyz": [0, 0, 0]}}
       }
     ]
-  },
-  "right_finger_prox_link": {
-    "visual": [
-      {
-        "geometry": {"mesh": {"$": {"filename": "right_finger_prox_link.gltf"}}},
-        "origin": {"$": {"rpy": [1.5707963267948966, 0, 0], "xyz": [0, 0, 0]}}
-      },
-      {
-        "geometry": {"mesh": {"$": {"filename": "right_finger_prox_link.bbox.gltf"}}},
-        "origin": {"$": {"rpy": [1.5707963267948966, 0, 0], "xyz": [0, 0, 0]}}
-      }
-    ]
-  },
-  "right_finger_dist_link": {
-    "visual": [
-      {
-        "geometry": {"mesh": {"$": {"filename": "right_finger_dist_link.gltf"}}},
-        "origin": {"$": {"rpy": [1.5707963267948966, 0, 0], "xyz": [0, 0, 0]}}
-      },
-      {
-        "geometry": {"mesh": {"$": {"filename": "right_finger_dist_link.bbox.gltf"}}},
-        "origin": {"$": {"rpy": [1.5707963267948966, 0, 0], "xyz": [0, 0, 0]}}
-      }
-    ]
   }
 }
