@@ -140,7 +140,7 @@ export default function Home(props) {
           ref={kinova_ref}
           robot-loader="model: gen2"
 
-          ik-worker={`${0}, ${Math.PI}, ${deg90}, ${0}, ${deg90}, ${0}, ${0}, ${0}`}
+          ik-worker={`${0}, ${Math.PI}, ${deg90}, ${0}, ${deg90}, ${0}`}
           reflect-worker-joints
           arm-motion-ui
           grip-control
